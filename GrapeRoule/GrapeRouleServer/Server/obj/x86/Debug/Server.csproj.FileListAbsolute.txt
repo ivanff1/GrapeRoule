@@ -1,0 +1,8 @@
+C:\Users\NIKI\Desktop\GrapeRoule\GrapeRouleServer\Server\bin\Debug\Server.exe
+C:\Users\NIKI\Desktop\GrapeRoule\GrapeRouleServer\Server\bin\Debug\Server.pdb
+C:\Users\NIKI\Desktop\GrapeRoule\GrapeRouleServer\Server\obj\x86\Debug\Server.Server.resources
+C:\Users\NIKI\Desktop\GrapeRoule\GrapeRouleServer\Server\obj\x86\Debug\Server.Properties.Resources.resources
+C:\Users\NIKI\Desktop\GrapeRoule\GrapeRouleServer\Server\obj\x86\Debug\Server.csproj.GenerateResource.Cache
+C:\Users\NIKI\Desktop\GrapeRoule\GrapeRouleServer\Server\obj\x86\Debug\Server.exe
+C:\Users\NIKI\Desktop\GrapeRoule\GrapeRouleServer\Server\obj\x86\Debug\Server.pdb
+C:\Users\NIKI\Desktop\GrapeRoule\GrapeRouleServer\Server\obj\x86\Debug\Server.csprojResolveAssemblyReference.cache

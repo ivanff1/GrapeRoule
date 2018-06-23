@@ -1,0 +1,4 @@
+C:\Users\NIKI\Desktop\GrapeRoule\GrapeRouleServer\TestClient\bin\Debug\TestClient.exe
+C:\Users\NIKI\Desktop\GrapeRoule\GrapeRouleServer\TestClient\bin\Debug\TestClient.pdb
+C:\Users\NIKI\Desktop\GrapeRoule\GrapeRouleServer\TestClient\obj\x86\Debug\TestClient.exe
+C:\Users\NIKI\Desktop\GrapeRoule\GrapeRouleServer\TestClient\obj\x86\Debug\TestClient.pdb
