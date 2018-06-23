@@ -5,8 +5,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestClient", "TestClient\TestClient.csproj", "{D740D524-561E-4186-8E00-499605D59DC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerC", "ServerC\ServerC.csproj", "{1EB5A606-2D37-44D9-ACA6-859CFB0685EE}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -21,10 +19,6 @@ Global
 		{D740D524-561E-4186-8E00-499605D59DC3}.Debug|x86.Build.0 = Debug|x86
 		{D740D524-561E-4186-8E00-499605D59DC3}.Release|x86.ActiveCfg = Release|x86
 		{D740D524-561E-4186-8E00-499605D59DC3}.Release|x86.Build.0 = Release|x86
-		{1EB5A606-2D37-44D9-ACA6-859CFB0685EE}.Debug|x86.ActiveCfg = Debug|x86
-		{1EB5A606-2D37-44D9-ACA6-859CFB0685EE}.Debug|x86.Build.0 = Debug|x86
-		{1EB5A606-2D37-44D9-ACA6-859CFB0685EE}.Release|x86.ActiveCfg = Release|x86
-		{1EB5A606-2D37-44D9-ACA6-859CFB0685EE}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

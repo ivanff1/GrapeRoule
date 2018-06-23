@@ -1,0 +1,4 @@
+C:\Users\NIKI\Desktop\GrapeRoule\SqlFuncs\SqlFuncs\bin\Debug\SqlFuncs.dll
+C:\Users\NIKI\Desktop\GrapeRoule\SqlFuncs\SqlFuncs\bin\Debug\SqlFuncs.pdb
+C:\Users\NIKI\Desktop\GrapeRoule\SqlFuncs\SqlFuncs\obj\Debug\SqlFuncs.dll
+C:\Users\NIKI\Desktop\GrapeRoule\SqlFuncs\SqlFuncs\obj\Debug\SqlFuncs.pdb

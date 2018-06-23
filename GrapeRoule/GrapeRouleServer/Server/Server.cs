@@ -10,6 +10,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using System.IO;
+using SqlFuncs;
 
 namespace Server
 {
@@ -31,6 +32,10 @@ namespace Server
             clients = new Dictionary<int, TcpClient>();
             genNumber = generateNumber();
 
+            //SqlFuncs.ManageDB db = new ManageDB();
+            //db.setUp();
+
+            MessageBox.Show("Hi");
             int clientsCounter = 0;
 
             listener.Start();
@@ -44,6 +49,7 @@ namespace Server
                     Thread t = new Thread(() => checkNumber(client, out responseValues[clientsCounter]));
                     t.Start();
                 }
+
                 clientsCounter++;
             }
 
