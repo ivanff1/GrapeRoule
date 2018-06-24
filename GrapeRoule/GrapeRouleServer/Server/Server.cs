@@ -38,13 +38,19 @@ namespace Server
 
             while (true) {
                 clients.Add(clientsCounter, listener.AcceptTcpClient());
+                MessageBox.Show("Accepted!");
                 bool [] responseValues = new bool[8];
                 foreach (var client in clients.Values)
                 {
-                    Thread t = new Thread(() => checkNumber(client, out responseValues[clientsCounter]));
-                    t.Start();
+                    if (client.Connected)
+                    {
+                        Thread t = new Thread(() => checkNumber(client, out responseValues[clientsCounter]));
+                        t.Start();
+                    }
+                    else {
+                        MessageBox.Show("Something is wrong..");
+                    }
                 }
-
                 clientsCounter++;
             }
 
