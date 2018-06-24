@@ -27,6 +27,7 @@ namespace Client
             client = new TcpClient();
             client.Connect(IPAddress.Parse("127.0.0.1"), 5000);
             MessageBox.Show("Connected!");
+            this.lblUser.Text = Credentials.Username;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -54,7 +55,7 @@ namespace Client
             db.setUp();
             string [] args = {"@UN", "@PW"};
             string [] values = {};
-            int funds = db.Select("Select * From ", );
+            int funds = db.Select("Select * From GrapeClient", );
              * */
         }
     }

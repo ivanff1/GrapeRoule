@@ -23,7 +23,7 @@ namespace Client
             db.setUp();
             string [] args = {"@UN", "@PW"};
             string [] values = {this.txtUsername.Text, this.txtPassword.Text};
-            db.Insert("Insert Into GrapeRoule (Username, Password) Values (@UN, @PW)", args, values);
+            db.Insert("Insert Into GrapeClient (Username, Password) Values (@UN, @PW)", args, values);
             MessageBox.Show("Successfully logged in!");
         }
 

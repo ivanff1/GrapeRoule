@@ -10,6 +10,7 @@ namespace Client
 
         public static string Username;
         public static string Password;
+        public static int Funds;
 
     }
 }

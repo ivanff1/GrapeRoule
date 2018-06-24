@@ -24,7 +24,7 @@ namespace Client
 
             string [] args = {"@UN", "@PW"};
             string [] values = {this.txtUsername.Text, this.txtPassword.Text};
-            DataTable dt = db.Select("Select * From GrapeRoule Where Username = @UN And Password = @PW", args, values);
+            DataTable dt = db.Select("Select * From GrapeClient Where Username = @UN And Password = @PW", args, values);
             if (dt.Rows.Count == 0)
             {
                 MessageBox.Show("Incorrect credentials!");
