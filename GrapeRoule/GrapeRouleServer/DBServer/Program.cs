@@ -40,7 +40,7 @@ namespace DBServer
 
                 string query = Encoding.ASCII.GetString(info);
 
-
+                
             }
         }
     }

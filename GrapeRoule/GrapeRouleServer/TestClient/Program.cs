@@ -14,15 +14,16 @@ namespace TestClient
         {
             TcpClient client = new TcpClient();
             client.Connect(IPAddress.Parse("127.0.0.1"), 5000);
-            NetworkStream stream = client.GetStream();
             Console.WriteLine("Connected successfully!");
+            
+            NetworkStream stream = client.GetStream();
             string info = Console.ReadLine();
             stream.Write(Encoding.ASCII.GetBytes(info), 0, info.Length);
             byte[] income = new byte[1024];
             stream.Read(income, 0, income.Length);
             Console.WriteLine(Encoding.ASCII.GetString(income));
+            Console.ReadLine();
             stream.Close();
-            Console.ReadKey();
         }
     }
 }
