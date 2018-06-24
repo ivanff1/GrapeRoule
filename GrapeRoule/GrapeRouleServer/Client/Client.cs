@@ -50,11 +50,12 @@ namespace Client
 
         private void btnFunds_Click(object sender, EventArgs e)
         {
-            ManageDB db = new ManageDB();
+            /*ManageDB db = new ManageDB();
             db.setUp();
             string [] args = {"@UN", "@PW"};
             string [] values = {};
             int funds = db.Select("Select * From ", );
+             * */
         }
     }
 }

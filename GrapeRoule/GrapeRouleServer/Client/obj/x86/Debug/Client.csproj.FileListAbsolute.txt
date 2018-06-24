@@ -3,3 +3,11 @@ C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Client\obj\x86\Debug\Client.
 C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Client\obj\x86\Debug\Client.Properties.Resources.resources
 C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Client\obj\x86\Debug\Client.Register.resources
 C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Client\obj\x86\Debug\Client.csproj.GenerateResource.Cache
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Client\bin\Debug\Client.exe.config
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Client\bin\Debug\Client.exe
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Client\bin\Debug\Client.pdb
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Client\bin\Debug\SqlFuncs.dll
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Client\bin\Debug\SqlFuncs.pdb
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Client\obj\x86\Debug\Client.exe
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Client\obj\x86\Debug\Client.pdb
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Client\obj\x86\Debug\Client.csprojResolveAssemblyReference.cache
