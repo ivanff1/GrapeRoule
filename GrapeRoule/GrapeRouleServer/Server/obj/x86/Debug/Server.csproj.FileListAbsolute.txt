@@ -8,3 +8,15 @@ C:\Users\NIKI\Desktop\GrapeRoule\GrapeRouleServer\Server\obj\x86\Debug\Server.pd
 C:\Users\NIKI\Desktop\GrapeRoule\GrapeRouleServer\Server\bin\Debug\SqlFuncs.dll
 C:\Users\NIKI\Desktop\GrapeRoule\GrapeRouleServer\Server\bin\Debug\SqlFuncs.pdb
 C:\Users\NIKI\Desktop\GrapeRoule\GrapeRouleServer\Server\obj\x86\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Server\obj\x86\Debug\Server.exe
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Server\obj\x86\Debug\Server.pdb
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Server\bin\Debug\Server.exe
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Server\bin\Debug\Server.pdb
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Server\bin\Debug\SqlFuncs.pdb
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Server\obj\x86\Debug\Server.Server.resources
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Server\obj\x86\Debug\Server.Properties.Resources.resources
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Server\obj\x86\Debug\Server.csproj.GenerateResource.Cache
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Server\bin\Debug\SqlFuncs.dll
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Server\bin\Debug\TestClient.exe
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Server\bin\Debug\TestClient.pdb
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Server\obj\x86\Debug\Server.csprojResolveAssemblyReference.cache

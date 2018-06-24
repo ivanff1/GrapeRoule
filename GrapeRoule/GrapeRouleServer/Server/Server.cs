@@ -28,14 +28,10 @@ namespace Server
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            listener = new TcpListener(IPAddress.Any, 5000);
+            listener = new TcpListener(IPAddress.Parse("127.0.0.1"), 5000);
             clients = new Dictionary<int, TcpClient>();
             genNumber = generateNumber();
-
-            //SqlFuncs.ManageDB db = new ManageDB();
-            //db.setUp();
-
-            MessageBox.Show("Hi");
+            
             int clientsCounter = 0;
 
             listener.Start();
@@ -43,7 +39,6 @@ namespace Server
             while (true) {
                 clients.Add(clientsCounter, listener.AcceptTcpClient());
                 bool [] responseValues = new bool[8];
-
                 foreach (var client in clients.Values)
                 {
                     Thread t = new Thread(() => checkNumber(client, out responseValues[clientsCounter]));
@@ -74,12 +69,13 @@ namespace Server
             if (clientNum == genNumber)
             {
                 retVal = true;
+                stream.Write(Encoding.ASCII.GetBytes("True!"), 0, "True".Length);
             }
             else {
                 retVal = false;
+                stream.Write(Encoding.ASCII.GetBytes("False!"), 0, "True".Length);
             }
 
-            stream.Write(Encoding.ASCII.GetBytes("True!"), 0, "True".Length);
             stream.Close();
         }
     }

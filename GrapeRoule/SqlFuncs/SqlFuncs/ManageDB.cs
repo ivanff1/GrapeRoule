@@ -5,26 +5,27 @@ using System.Text;
 using System.Data;
 using System.Data.SqlClient;
 using System.IO;
+using SqlFuncs;
 
 namespace SqlFuncs
 {
     public class ManageDB
     {
-        private SqlConnection sqlCnn;
+        public SqlConnection sqlCnn;
         private SqlDataAdapter da;
         private DataTable dt;
-
-
+        
         public void setUp() {
             var file = File.OpenText("Properties.cn");
-            string sqlCnnString = @"Data Source = " + file.ReadLine() + "; Initial catalog = GrapeRoule; Persist security info=True; User Id=sa; Password = " + file.ReadLine() + "; Connection timeout = 6000;";
+            string sqlCnnString = @"Data Source = NIKOLA-PC\SQLNIK; Initial catalog = GrapeRouleDB; Persist security info=True; User Id=sa; Password = " + "fori=0; Connection timeout = 6000;";
             sqlCnn = new SqlConnection(sqlCnnString);
 
             sqlCnn.Open();
             sqlCnn.Close();
         }
 
-        public void Select(string query, params string [] args) {
+        public DataTable Select(string query, params string [] args) {
+            sqlCnn.Open();
             SqlCommand sqlCmd = new SqlCommand(query, sqlCnn);
             
             for (int i = 0; i < args.Length; i++) {
@@ -36,22 +37,63 @@ namespace SqlFuncs
             dt = new DataTable();
 
             da.Fill(dt);
+
+            sqlCmd.ExecuteNonQuery();
+            sqlCnn.Close();
+
+            return dt;
         }
 
-        public override void Select(){
-            
+        public void Insert(string query, params string [] args) {
+            sqlCnn.Open();
+
+            SqlCommand sqlCmd = new SqlCommand(query, sqlCnn);
+
+            foreach (var arg in args) {
+                sqlCmd.Parameters.Add(arg);
+            }
+
+            da = new SqlDataAdapter(sqlCmd);
+            dt = new DataTable();
+
+            da.Update(dt);
+
+            sqlCmd.ExecuteNonQuery();
+
+            sqlCnn.Close();
         }
 
-        public void Insert() { 
-            
+        public void Update(string query, params string [] args) {
+            sqlCnn.Open();
+            SqlCommand sqlCmd = new SqlCommand(query, sqlCnn);
+
+            foreach (var arg in args) {
+                sqlCmd.Parameters.Add(arg);
+            }
+
+            da = new SqlDataAdapter(sqlCmd);
+
+            dt = new DataTable();
+
+            da.Update(dt);
+            sqlCnn.Close();
         }
 
-        public void Update() { 
-            
-        }
+        public void Delete(string query, params string [] args) {
+            sqlCnn.Open();
+            SqlCommand sqlCmd = new SqlCommand(query, sqlCnn);
 
-        public void Delete() { 
-            
+            foreach (var arg in args)
+            {
+                sqlCmd.Parameters.Add(arg);
+            }
+
+            da = new SqlDataAdapter(sqlCmd);
+
+            dt = new DataTable();
+
+            da.Update(dt);
+            sqlCnn.Close();
         }
     }
 }

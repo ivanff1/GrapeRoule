@@ -1,0 +1,8 @@
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\DBServer\obj\x86\Debug\DBServer.csprojResolveAssemblyReference.cache
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\DBServer\bin\Debug\DBServer.exe.config
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\DBServer\bin\Debug\DBServer.exe
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\DBServer\bin\Debug\DBServer.pdb
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\DBServer\bin\Debug\SqlFuncs.dll
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\DBServer\bin\Debug\SqlFuncs.pdb
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\DBServer\obj\x86\Debug\DBServer.exe
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\DBServer\obj\x86\Debug\DBServer.pdb
