@@ -81,31 +81,25 @@ namespace Server
                 clients.Add(clientsCounter, listener.AcceptTcpClient());
                 clientsCounter++;
             }
-            MessageBox.Show("Accepted!");
 
+            MessageBox.Show("Accepted!");
             
             bool [] responseValues = new bool[8];
-
-            foreach (var client in clients.Values)
+            while (true)
             {
-                if (client.Connected)
+                foreach (var client in clients.Values)
                 {
-                    Thread t = new Thread(() => checkNumber(client, out responseValues[clientsCounter]));
-                    t.Start();
-                }
-                else {
-                    MessageBox.Show("Something is wrong..");
+                    if (client.Connected)
+                    {
+                        Thread t = new Thread(() => checkNumber(client, out responseValues[clientsCounter]));
+                        t.Start();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Something is wrong..");
+                    }
                 }
             }
-
-            timer.Interval = 30000;
-            Thread th = new Thread(timer.Start);
-            th.Start();
-
-            while (true) { 
-            
-            }
-
         }
 
         public int generateNumber() {
@@ -122,67 +116,70 @@ namespace Server
         }
 
         public void checkNumber(TcpClient client, out bool retVal) {
-            NetworkStream stream = client.GetStream();
-
-            //тук ще се случва декриптирането на стрийма
-
-            byte[] clientInfo = new byte[1024];
-            
-            stream.Read(clientInfo, 0, clientInfo.Length);
-
-            try
+            while (true)
             {
-                int clientNum = Convert.ToInt32(Encoding.ASCII.GetString(clientInfo));
+                NetworkStream stream = client.GetStream();
 
-                if (clientNum == genNumber)
+                //тук ще се случва декриптирането на стрийма
+
+                byte[] clientInfo = new byte[1024];
+
+                stream.Read(clientInfo, 0, clientInfo.Length);
+
+                try
+                {
+                    int clientNum = Convert.ToInt32(Encoding.ASCII.GetString(clientInfo));
+
+                    if (clientNum == genNumber)
                     {
                         retVal = true;
                         stream.Write(Encoding.ASCII.GetBytes("True!"), 0, "True!".Length);
                     }
-                else
+                    else
                     {
                         retVal = false;
                         stream.Write(Encoding.ASCII.GetBytes("False!"), 0, "False!".Length);
                     }
-            }
-            catch(Exception ex){
-                
-
-                string clientBet = Encoding.ASCII.GetString(clientInfo);
-
-                if (clientBet == "red" || clientBet == "black") {
-                    if (wheel[genNumber] == clientBet)
-                    {
-                        retVal = true;
-                        stream.Write(Encoding.ASCII.GetBytes("True!"), 0, "True!".Length);
-                    }
-                    else {
-                        retVal = false;
-                        stream.Write(Encoding.ASCII.GetBytes("False!"), 0, "False!".Length);
-                    }
-                }   
-
-                else if (clientBet == "even" || clientBet == "odd")
-                {
-                    if (isEven(genNumber))
-                    {
-                        retVal = true;
-                        stream.Write(Encoding.ASCII.GetBytes("True!"), 0, "True!".Length);
-                    }
-                    else {
-                        retVal = false;
-                        stream.Write(Encoding.ASCII.GetBytes("False"), 0, "False!".Length);
-                    }
-                }   
-
-                else
-                {
-                    retVal = false;
-                    stream.Write(Encoding.ASCII.GetBytes("False!"), 0, "False!".Length);
                 }
-           }
+                catch (Exception ex)
+                {
+                    string clientBet = Encoding.ASCII.GetString(clientInfo);
 
-           stream.Close();
+                    if (clientBet == "red" || clientBet == "black")
+                    {
+                        if (wheel[genNumber] == clientBet)
+                        {
+                            retVal = true;
+                            stream.Write(Encoding.ASCII.GetBytes("True!"), 0, "True!".Length);
+                        }
+                        else
+                        {
+                            retVal = false;
+                            stream.Write(Encoding.ASCII.GetBytes("False!"), 0, "False!".Length);
+                        }
+                    }
+
+                    else if (clientBet == "even" || clientBet == "odd")
+                    {
+                        if (isEven(genNumber))
+                        {
+                            retVal = true;
+                            stream.Write(Encoding.ASCII.GetBytes("True!"), 0, "True!".Length);
+                        }
+                        else
+                        {
+                            retVal = false;
+                            stream.Write(Encoding.ASCII.GetBytes("False"), 0, "False!".Length);
+                        }
+                    }
+
+                    else
+                    {
+                        retVal = false;
+                        stream.Write(Encoding.ASCII.GetBytes("False!"), 0, "False!".Length);
+                    }
+                }
+            }
         }
 
         public void BroadcastMessage(string message) {
