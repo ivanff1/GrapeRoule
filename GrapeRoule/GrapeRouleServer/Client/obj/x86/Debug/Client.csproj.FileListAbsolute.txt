@@ -1,0 +1,5 @@
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Client\obj\x86\Debug\Client.Client.resources
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Client\obj\x86\Debug\Client.Login.resources
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Client\obj\x86\Debug\Client.Properties.Resources.resources
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Client\obj\x86\Debug\Client.Register.resources
+C:\Users\NIKOLA\Desktop\GrapeRoule\GrapeRouleServer\Client\obj\x86\Debug\Client.csproj.GenerateResource.Cache

@@ -24,12 +24,17 @@ namespace SqlFuncs
             sqlCnn.Close();
         }
 
-        public DataTable Select(string query, params string [] args) {
+        public DataTable Select(string query, string[] args, string[] values)
+        {
             sqlCnn.Open();
             SqlCommand sqlCmd = new SqlCommand(query, sqlCnn);
-            
+
+            foreach (var arg in args) {
+                sqlCmd.Parameters.Add(arg, SqlDbType.VarChar);
+            }
+
             for (int i = 0; i < args.Length; i++) {
-                sqlCmd.Parameters.Add(args[i]);
+                sqlCmd.Parameters[i].Value = values[i];
             }
 
             da = new SqlDataAdapter(sqlCmd);
@@ -44,13 +49,17 @@ namespace SqlFuncs
             return dt;
         }
 
-        public void Insert(string query, params string [] args) {
+        public void Insert(string query, string [] args, string [] values) {
             sqlCnn.Open();
 
             SqlCommand sqlCmd = new SqlCommand(query, sqlCnn);
 
             foreach (var arg in args) {
-                sqlCmd.Parameters.Add(arg);
+                sqlCmd.Parameters.Add(arg, SqlDbType.VarChar);
+            }
+
+            for (int i = 0; i < args.Length; i++){
+                sqlCmd.Parameters[i].Value = values[i];
             }
 
             da = new SqlDataAdapter(sqlCmd);
@@ -63,36 +72,55 @@ namespace SqlFuncs
             sqlCnn.Close();
         }
 
-        public void Update(string query, params string [] args) {
+        public void Update(string query, string[] args, string[] values)
+        {
             sqlCnn.Open();
-            SqlCommand sqlCmd = new SqlCommand(query, sqlCnn);
 
-            foreach (var arg in args) {
-                sqlCmd.Parameters.Add(arg);
-            }
-
-            da = new SqlDataAdapter(sqlCmd);
-
-            dt = new DataTable();
-
-            da.Update(dt);
-            sqlCnn.Close();
-        }
-
-        public void Delete(string query, params string [] args) {
-            sqlCnn.Open();
             SqlCommand sqlCmd = new SqlCommand(query, sqlCnn);
 
             foreach (var arg in args)
             {
-                sqlCmd.Parameters.Add(arg);
+                sqlCmd.Parameters.Add(arg, SqlDbType.VarChar);
+            }
+
+            for (int i = 0; i < args.Length; i++)
+            {
+                sqlCmd.Parameters[i].Value = values[i];
             }
 
             da = new SqlDataAdapter(sqlCmd);
-
             dt = new DataTable();
 
             da.Update(dt);
+
+            sqlCmd.ExecuteNonQuery();
+
+            sqlCnn.Close();
+        }
+
+        public void Delete(string query, string[] args, string[] values)
+        {
+            sqlCnn.Open();
+
+            SqlCommand sqlCmd = new SqlCommand(query, sqlCnn);
+
+            foreach (var arg in args)
+            {
+                sqlCmd.Parameters.Add(arg, SqlDbType.VarChar);
+            }
+
+            for (int i = 0; i < args.Length; i++)
+            {
+                sqlCmd.Parameters[i].Value = values[i];
+            }
+
+            da = new SqlDataAdapter(sqlCmd);
+            dt = new DataTable();
+
+            da.Update(dt);
+
+            sqlCmd.ExecuteNonQuery();
+
             sqlCnn.Close();
         }
     }
