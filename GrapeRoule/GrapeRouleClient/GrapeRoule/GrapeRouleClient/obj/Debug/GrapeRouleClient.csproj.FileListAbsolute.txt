@@ -1,0 +1,28 @@
+D:\Projects\Visual Studio\GrapeRouleClient\GrapeRouleClient\bin\Debug\GrapeRouleClient.exe.config
+D:\Projects\Visual Studio\GrapeRouleClient\GrapeRouleClient\bin\Debug\GrapeRouleClient.exe
+D:\Projects\Visual Studio\GrapeRouleClient\GrapeRouleClient\bin\Debug\GrapeRouleClient.pdb
+D:\Projects\Visual Studio\GrapeRouleClient\GrapeRouleClient\obj\Debug\GrapeRouleClient.Properties.Resources.resources
+D:\Projects\Visual Studio\GrapeRouleClient\GrapeRouleClient\obj\Debug\GrapeRouleClient.csproj.GenerateResource.cache
+D:\Projects\Visual Studio\GrapeRouleClient\GrapeRouleClient\obj\Debug\GrapeRouleClient.csproj.CoreCompileInputs.cache
+D:\Projects\Visual Studio\GrapeRouleClient\GrapeRouleClient\obj\Debug\GrapeRouleClient.exe
+D:\Projects\Visual Studio\GrapeRouleClient\GrapeRouleClient\obj\Debug\GrapeRouleClient.pdb
+D:\Projects\Visual Studio\GrapeRouleClient\GrapeRouleClient\obj\Debug\GrapeRouleClient.Home_PageUC.resources
+D:\Projects\Visual Studio\GrapeRouleClient\GrapeRouleClient\obj\Debug\GrapeRouleClient.Roulette_PageUC.resources
+D:\Files from PC\Visual Basic Projects - =&+Ivan+&=\GrapeRoule\GrapeRouleClient\bin\Debug\GrapeRouleClient.exe.config
+D:\Files from PC\Visual Basic Projects - =&+Ivan+&=\GrapeRoule\GrapeRouleClient\bin\Debug\GrapeRouleClient.exe
+D:\Files from PC\Visual Basic Projects - =&+Ivan+&=\GrapeRoule\GrapeRouleClient\bin\Debug\GrapeRouleClient.pdb
+D:\Files from PC\Visual Basic Projects - =&+Ivan+&=\GrapeRoule\GrapeRouleClient\obj\Debug\GrapeRouleClient.Home_PageUC.resources
+D:\Files from PC\Visual Basic Projects - =&+Ivan+&=\GrapeRoule\GrapeRouleClient\obj\Debug\GrapeRouleClient.Properties.Resources.resources
+D:\Files from PC\Visual Basic Projects - =&+Ivan+&=\GrapeRoule\GrapeRouleClient\obj\Debug\GrapeRouleClient.Roulette_PageUC.resources
+D:\Files from PC\Visual Basic Projects - =&+Ivan+&=\GrapeRoule\GrapeRouleClient\obj\Debug\GrapeRouleClient.csproj.GenerateResource.cache
+D:\Files from PC\Visual Basic Projects - =&+Ivan+&=\GrapeRoule\GrapeRouleClient\obj\Debug\GrapeRouleClient.csproj.CoreCompileInputs.cache
+D:\Files from PC\Visual Basic Projects - =&+Ivan+&=\GrapeRoule\GrapeRouleClient\obj\Debug\GrapeRouleClient.exe
+D:\Files from PC\Visual Basic Projects - =&+Ivan+&=\GrapeRoule\GrapeRouleClient\obj\Debug\GrapeRouleClient.pdb
+D:\Projects\Visual Studio\GrapeRouleClient\GrapeRouleClient\obj\Debug\GrapeRouleClient.Register_PageUC.resources
+D:\Projects\Visual Studio\GrapeRouleClient\GrapeRouleClient\obj\Debug\GrapeRouleClient.Login_PageUC.resources
+D:\Projects\Visual Studio\GrapeRouleClient\GrapeRouleClient\obj\Debug\GrapeRouleClient.GrapeRouleMain.resources
+D:\Projects\Visual Studio\GrapeRouleClient\GrapeRouleClient\obj\Debug\GrapeRouleClient.GrapeRouleSign.resources
+D:\Files from PC\Visual Basic Projects - =&+Ivan+&=\GrapeRoule\GrapeRouleClient\obj\Debug\GrapeRouleClient.GrapeRouleMain.resources
+D:\Files from PC\Visual Basic Projects - =&+Ivan+&=\GrapeRoule\GrapeRouleClient\obj\Debug\GrapeRouleClient.GrapeRouleSign.resources
+D:\Files from PC\Visual Basic Projects - =&+Ivan+&=\GrapeRoule\GrapeRouleClient\obj\Debug\GrapeRouleClient.Login_PageUC.resources
+D:\Files from PC\Visual Basic Projects - =&+Ivan+&=\GrapeRoule\GrapeRouleClient\obj\Debug\GrapeRouleClient.Register_PageUC.resources
