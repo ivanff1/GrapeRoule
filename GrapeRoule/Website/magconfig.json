@@ -1,0 +1,8 @@
+{
+	"dir": "./dist",
+	"username": "Trayan",
+	"version": "0.0.1",
+	"db_url": "localhost:27017",
+	"db": "fest-softuni",
+	"CORS_Allowed_Origins": "http://localhost:4200"
+}
