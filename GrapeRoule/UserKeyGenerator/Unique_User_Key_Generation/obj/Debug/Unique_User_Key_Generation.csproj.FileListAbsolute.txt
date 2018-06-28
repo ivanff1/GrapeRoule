@@ -1,0 +1,5 @@
+C:\Users\Ivan Zlatanov\source\repos\Unique_User_Key_Generation\Unique_User_Key_Generation\bin\Debug\Unique_User_Key_Generation.dll
+C:\Users\Ivan Zlatanov\source\repos\Unique_User_Key_Generation\Unique_User_Key_Generation\bin\Debug\Unique_User_Key_Generation.pdb
+C:\Users\Ivan Zlatanov\source\repos\Unique_User_Key_Generation\Unique_User_Key_Generation\obj\Debug\Unique_User_Key_Generation.csproj.CoreCompileInputs.cache
+C:\Users\Ivan Zlatanov\source\repos\Unique_User_Key_Generation\Unique_User_Key_Generation\obj\Debug\Unique_User_Key_Generation.dll
+C:\Users\Ivan Zlatanov\source\repos\Unique_User_Key_Generation\Unique_User_Key_Generation\obj\Debug\Unique_User_Key_Generation.pdb
