@@ -1,0 +1,4 @@
+#Sun Jun 24 15:37:39 EEST 2018
+base.0=D\:\\Documents\\GrapeRoule\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\43
+path.0=classes.dex
+renamed.0=classes.dex
